@@ -4,6 +4,6 @@
     
    
    ## Postman files
-   [postman_collection](newspaper.postman_collection_v1)
-   1. postman_collection_v1
-   2. postman_collection_v2
+   [postman export file type 1](newspaper.postman_collection_v1)
+   
+   [postman_export file type 2](newspaper.postman_collection_v2)
