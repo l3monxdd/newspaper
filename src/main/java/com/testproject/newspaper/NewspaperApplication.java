@@ -7,13 +7,13 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @ComponentScan(basePackages = {"com.testproject.controllers", "com.testproject.service",
-		"com.testproject.serviceImpl"})
+        "com.testproject.serviceImpl"})
 @EntityScan({"com.testproject.entities"})
 @EnableJpaRepositories("com.testproject.dao")
 @SpringBootApplication
 public class NewspaperApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(NewspaperApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(NewspaperApplication.class, args);
+    }
 }

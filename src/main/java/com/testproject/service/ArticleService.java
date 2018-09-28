@@ -14,5 +14,5 @@ public interface ArticleService {
 
     void update(Article article);
 
-    List<Article>findAll();
+    List<Article> findAll();
 }

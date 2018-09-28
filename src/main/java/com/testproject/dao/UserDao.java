@@ -14,6 +14,6 @@ public interface UserDao extends JpaRepository<User, Integer> {
     List<User> findByAge(@Param("parameter") int parameter);
 
     @Query("select u from Article a left join User u on u.id = a.user.id where a.color=:colorParam")
-    List<User> findUserByColorInArticle(@Param("colorParam")Color color);
+    List<User> findUserByColorInArticle(@Param("colorParam") Color color);
 
 }

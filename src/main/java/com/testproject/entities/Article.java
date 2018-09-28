@@ -1,9 +1,6 @@
 package com.testproject.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -28,7 +25,7 @@ public class Article {
     private Color color = Color.BLUE;
 
     @ManyToOne()
-    @JoinColumn(name ="user_id")
+    @JoinColumn(name = "user_id")
     @JsonBackReference
     private User user;
 }

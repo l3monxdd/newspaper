@@ -16,28 +16,25 @@ public class ArticleController {
     private ArticleService articleService;
 
     @PostMapping()
-    public Article addArticle (@RequestBody Article article){
+    public Article addArticle(@RequestBody Article article) {
         articleService.save(article);
         return article;
     }
 
     @DeleteMapping("/{id}")
-    public void deleteArticle(@PathVariable int id){
+    public void deleteArticle(@PathVariable int id) {
         articleService.delete(id);
     }
 
     @GetMapping("/{id}")
-    public Article findArticleById(@PathVariable int id){
+    public Article findArticleById(@PathVariable int id) {
         return articleService.findById(id);
     }
 
     @GetMapping("/all")
-    public List<Article> findAllArticles(){
+    public List<Article> findAllArticles() {
         return articleService.findAll();
     }
-
-
-
 
 
 }
