@@ -15,15 +15,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-//    @GetMapping
-//    public User user(){
-//        User user = new User();
-//        user.setName("Roman");
-//        user.setAge(18);
-//        userService.save(user);
-//        return user;
-//    }
-
     @PostMapping
     public User addUser(@RequestBody User user){
         userService.save(user);

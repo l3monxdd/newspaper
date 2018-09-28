@@ -9,13 +9,6 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface UserDao extends JpaRepository<User, Integer> {
-//
-//    @Query("select u from User u where u.age=:param1")
-//    User findByAge(@Param("param1") int age);
-//    @Query("from User u")
-//    User findByAge(int age);
-
-//    User findByAge(int age);
 
     @Query("select u from User u where u.age >:parameter")
     List<User> findByAge(@Param("parameter") int parameter);

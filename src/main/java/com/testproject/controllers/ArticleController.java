@@ -14,14 +14,6 @@ public class ArticleController {
 
     @Autowired
     private ArticleService articleService;
-//    @GetMapping()
-//    public Article article(){
-//        Article article = new Article();
-//        article.setText("some article is here");
-//        article.setColor(Color.GREEN);
-//        articleService.save(article);
-//        return article;
-//    }
 
     @PostMapping()
     public Article addArticle (@RequestBody Article article){

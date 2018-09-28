@@ -1,0 +1,160 @@
+{
+	"variables": [],
+	"info": {
+		"name": "newspaper",
+		"_postman_id": "0832cc4b-7730-db0f-a90f-7d570eedc7f5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserController",
+			"description": "",
+			"item": [
+				{
+					"name": "getUserById",
+					"request": {
+						"url": "http://localhost:8080/user/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUsers",
+					"request": {
+						"url": "http://localhost:8080/user/all",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "findByAge",
+					"request": {
+						"url": "http://localhost:8080/user/findByAge/10",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"age\": \"18\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "AddUser",
+					"request": {
+						"url": "http://localhost:8080/user",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Ivan\",\n\t\"age\": \"17\"\n}\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUserById",
+					"request": {
+						"url": "http://localhost:8080/user/3",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "findUserByColorInArticle",
+					"request": {
+						"url": "http://localhost:8080/user/findUserByColorInArticle/BLUE",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "articleController",
+			"description": "",
+			"item": [
+				{
+					"name": "addArticle",
+					"request": {
+						"url": "http://localhost:8080/article",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"text\": \"text is here 1\",\n\t\"color\": \"GREEN\",\n\t\"user\": {\n\t\t\"id\": \"1\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "deleteArticle",
+					"request": {
+						"url": "http://localhost:8080/article/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"url": "http://localhost:8080/article/2",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "findAllArticle",
+					"request": {
+						"url": "http://localhost:8080/article/all",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
