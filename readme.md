@@ -6,7 +6,7 @@
    ## Postman files
    [postman export file type 1](newspaper.postman_collection_v1)
    
-   [postman_export file type 2](newspaper.postman_collection_v2)
+   [postman export file type 2](newspaper.postman_collection_v2)
    
    ## User's request
    getUserById - find user by ID
