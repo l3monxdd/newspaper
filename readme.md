@@ -29,7 +29,3 @@
    findById - find article by id
    
    findAllArticle - get all articles
-   
-   ## Swagger 
-   [swagger url](http://localhost:8080/swagger-ui.html)
-   
